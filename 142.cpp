@@ -15,13 +15,17 @@ int T(int k, int i)
 }
 int main()
 {
-    freopen("intput.txt","r",stdin);
-    int n, s= 0;
-    cin>>n;
-    for(int i= 1; i<= n; i++)
+    freopen("input.txt", "r", stdin);
+    int n, s = 0;
+    cin >> n;
+    for (int i = 1; i <= n; i++)
     {
-        cin>>A[i];
-        s+=A[i];
+        cin >> A[i];
+        s += A[i];
     }
+
+    int result = T(s / 2, 1); // Gọi hàm T để tính giá trị tối đa
+    cout << "Maximum sum of subset: " << result << endl;
+    
 }
 
