@@ -43,6 +43,7 @@ class CrawlCellphone:
         response = requests.post(self.url, headers=self.headers, json=data)
         return response.json()
     
+    
     def get_info_phone(self, data):
         output = []
         for i in range(len(data['data']['products'])):
